@@ -1,0 +1,40 @@
+h1 {
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: serif;
+    border-top: 12px groove #003cff;
+    border-bottom: 12px groove #c42aea;
+    border-right: 8px groove #003cff;
+    border-left: 8px groove #c42aea;
+    
+
+}
+
+h2 {
+    text-align: justify;
+    font-family: sans-serif;
+
+}
+
+body {
+    font-family: Helvetica, "Lucida Grande", sans-serif;
+    font-style: normal;
+    background-image: url(https://cdn.wallpapersafari.com/34/65/R3OEL5.jpg);
+    background-size: 970px;
+    color: #0c0052;
+}
+
+p {
+    text-align: justify;
+    font-family: monospace;
+    line-height: 14px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-indent: 30px;
+}
+
+figure {
+    text-align: center;
+    border: 15px groove #c42aea;
+
+}

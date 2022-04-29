@@ -1,0 +1,34 @@
+h1 {
+    color: #3D3D3D;
+    background-color: #e1edf2;
+    margin: 30px;
+
+}
+
+h2 {
+    
+}
+
+figure {
+    text-align: center;
+    background-color: whitesmoke;
+    color: lightgray;
+    padding: 15px;
+    margin:30px;
+    
+}
+
+body {
+    font-family: Helvetica;
+    margin: 30px;
+
+}
+
+img {
+    margin-bottom: 10px;
+    
+}
+
+p {
+    margin: 30px;
+}
