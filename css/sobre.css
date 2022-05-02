@@ -9,13 +9,20 @@ h2 {
     border-bottom: 2px solid black;
 }
 
+h3 {
+    text-align: center;
+    color: cyan;
+    font-size: 50px;
+    font-family: Arial;
+}
+
 figure {
     text-align: center;
     background-color: whitesmoke;
     color: lightgray;
     padding: 15px;
-    margin:30px;
-    
+    margin: 30px;
+
 }
 
 body {
@@ -27,9 +34,14 @@ body {
 
 img {
     margin-bottom: 10px;
-    
+
 }
 
 p {
     margin: 30px;
+}
+
+ul {
+    list-style-image: url("../img/icones-baixo.svg");
+    margin: 35px;
 }
