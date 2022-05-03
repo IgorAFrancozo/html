@@ -1,0 +1,10 @@
+p {
+    background-color: blue;
+    width: 30%;
+}
+
+a {
+    background-color: red;
+    width: 48%;
+    display: inline-block;
+}
