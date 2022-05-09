@@ -1,3 +1,9 @@
+html {
+    font-size: 16px;
+    width: auto;
+    line-height: 1.5;
+}
+
 .titulo {
     background-color: #e1edf2;
     padding: 10px;
@@ -15,21 +21,28 @@ h3 {
 
 body {
     font-family: Helvetica;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 90%;
+    max-width: 940px;
+    padding: 1.75rem;
 
 }
 
 figure {
+    box-sizing: border-box;
     text-align: center;
+    max-width: 100%;
     margin: 30px;
-    padding: 15px;
+    padding: 0px;
     background-color: whitesmoke;
     border: 1px solid lightgray;
 }
 
 figcaption {
     margin-top: 10px;
+}
+
+figure img {
+    width: 100%;
 }
 
 .matriz-musicdot {
@@ -44,30 +57,27 @@ figcaption {
 }
 
 p {
-    font-size: 22px;
     text-align: justify;
-    margin: 15px;
-    padding: 15px;
 }
 
-figure img {
-    width: 70%;
-}
 
-ul {
-    font-size: 22px;
-}
+ul {}
 
 .contato__secao {
-
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 16px;
 }
 
 .contato__secao--telefone {
+    display: inline-block;
+    margin-left: 32px;
 
 }
 
 .contato__subtitulo {
     display: inline;
+    margin: 15px;
 }
 
 .contato__info {
@@ -76,10 +86,73 @@ ul {
 
 }
 
-.contato__info--titulo {
-
+.contato__info--titulo,
+.contato__info--descricao {
+    display: inline;
 }
 
-.contato__info--descricao {
+dd {
+    margin-left: 9px;
+}
 
+
+.rodape,
+.rodape__logo,
+.rodape__copyright {
+    text-align: center;
+}
+
+.rodape {
+    padding: 1.75rem 0;
+    font-size: 1.10rem;
+}
+
+.rodape__logo {
+    width: 6rem;
+}
+
+.rodape__copyright {
+    display: inline;
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 850px) {
+    .contato__secao {
+        display: block;
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 622px) {
+    .familia-tupfeln {
+        float: none;
+        margin: auto;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 446px) {
+    .contato__subtitulo {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .contato__info {
+        padding-left: 5px;
+        font-size: 0.92em;
+        border-left: 1px solid lightgray;
+    }
+
+    .rodape {
+        font-size: 0.92em;
+    }
+
+    @media (max-width: 342px) {
+        .contato__info--descricao {
+            display: block;
+            margin-left: .90em;
+        }
+    }
 }
