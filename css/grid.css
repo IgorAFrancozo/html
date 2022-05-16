@@ -1,0 +1,34 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'item1 item2 item3'
+        'item1 item4 item5';
+    column-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000000aa;
+    background-color: #ff002b;
+    margin-bottom: 1rem;
+}
+
+.foto-destaque-verde {
+    background-color: #24cc2d;
+    height: calc(400px + 1em);
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+a {
+    font-size: 70px;
+    color: aliceblue;
+
+}

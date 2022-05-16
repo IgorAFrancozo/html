@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/teste-js.css">
+    <title>Aula de JS</title>
+</head>
+
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: #251c27;
+    }
+
+    #animate {
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+        position: absolute;
+        background-color: rgb(185, 53, 53);
+        src: local("img/icones-baixo.svg");
+    }
+
+    h1 {
+        color: white;
+        display: inline;
+    }
+
+    h2 {
+        color: #fff;
+    }
+</style>
+
+<body>
+
+
+    <input type="checkbox" id="animation" />
+    <label style="color:#fff" for="animation">Show animation</label>
+
+    <div class="match" role="img" aria-label="A drawing of a match burning"></div>
+
+
+
+    <h1><br>JavaScript</h1>
+    <h2><br>Linguagem de programação</p>
+        <label for="pocentagem">Porcentagem: </label>
+        <input id="porcentagem" type="range" max="20" value="7">
+        <span id="valorPorcentagem"></span>
+        <div id="mensagem" style="display: none;">
+            Recomenda-se deixar o volume abaixo de 70% ao usar fones de ouvido.
+        </div>
+
+        <p><button onclick="myMove()">Drop the Bass!</button></p>
+
+        <div id="container">
+            <img id="animate" src="img/icones-baixo.svg"></img>
+        </div>
+
+        <script>
+
+            function myMove() {
+                let id = null;
+                const elem = document.getElementById("animate");
+                let pos = 0;
+                clearInterval(id);
+                id = setInterval(frame, .007);
+                function frame() {
+                    if (pos == 900) {
+                        clearInterval(id);
+                    } else {
+                        pos++;
+                        elem.style.top = pos + "px";
+                        elem.style.left = pos + "px";
+                    }
+                }
+            }
+        </script>
+
+        <script type="text/javascript" src="js/teste.js"></script>
+</body>
+
+</html>

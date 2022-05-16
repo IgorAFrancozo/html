@@ -23,7 +23,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	color: #ffffff;
 	
 }
 /* HTML5 display-role reset for older browsers */
@@ -53,6 +52,6 @@ table {
 	border-spacing: 0;
 }
 a{
-	font: inherit;
+	color: inherit;
 	text-decoration: inherit;
 }
